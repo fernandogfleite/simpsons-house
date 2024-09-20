@@ -10,19 +10,10 @@
         public float gravity = -9.81f * 2;
         public float jumpHeight = 1f;
     
-        public Transform groundCheck;
-        public float groundDistance = 1f;
-        public LayerMask groundMask;
-    
         Vector3 velocity;
 
         void Update()
         {
-    
-            if (velocity.y < 0)
-            {
-                velocity.y = -3f;
-            }
     
             float x = Input.GetAxis("Horizontal");
             float z = Input.GetAxis("Vertical");
