@@ -8,7 +8,7 @@ using TMPro;
 public class PuzzleController : MonoBehaviour
 {
 
-    public const float ROUND_DURATION = 10f; 
+    public const float ROUND_DURATION = 60f; 
     private const float NEAR_DISTANCE_THRESHOLD = 5f;
     private const float FAR_DISTANCE_THRESHOLD = 15f;
 
