@@ -4,6 +4,8 @@
 
     public class PlayerMovement : MonoBehaviour
     {
+        [SerializeField] public PuzzleController puzzleController;
+
         public CharacterController controller;
     
         public float speed = 12f;
@@ -14,6 +16,10 @@
 
         void Update()
         {
+            if (puzzleController.gameFinished)
+            {
+                return;
+            }
     
             float x = Input.GetAxis("Horizontal");
             float z = Input.GetAxis("Vertical");
